@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Service Request Portal</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+	<style>
+		.title{
+			color: black;
+		}
+	
+		mark{
+			background-color: rgb(203, 231, 247);
+		}
+		a:hover {
+			background-color: rgb(201, 209, 211);
+		}
+	</style>
+	
+	</head>
+	<body class="d-flex flex-column h-100 container">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<div class = title><h1>Service Request Management System</h1>  
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  	<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="#"><mark>Show List</mark></a>
+					<a class="nav-link" href="add.html"><mark>Add Your Request</mark></a>
+				  </div>
+				</div>
+				</div>
+			  </div>
+			</nav>
+		</header>
+		
+		<table class="table table-striped table-hover text-center">
+			<thead>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Email</th>
+				<th>Request Domain</th>
+				<th>Your Request</th>
+				<!-- <th>Status</th> -->
+				<th>Action</th>
+
+
+			</thead>
+			<tbody id="tbody">
+				
+			</tbody>
+			<tfoot>
+				
+			</tfoot>
+		</table>
+		
+		<footer class="footer mt-auto py-3 bg-light">
+		  <div class="container text-center">
+			<span class="text-muted">Copyright &copy; ESD-2021</span>
+		  </div>
+		</footer>
+	</body>
+	<script src="script.js"></script>
+	<script>
+		getData();
+	</script>
+</html>

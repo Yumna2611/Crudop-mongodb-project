@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Service Request Portal</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+	<style>
+		mark{
+			background-color:rgb(203, 231, 247);
+		}
+		a:hover {
+			background-color: rgb(201, 209, 211);
+		}
+	</style>
+	
+	</head>
+	<body class="d-flex flex-column h-100 container">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <div class="container-fluid">
+				<div class = "addtitle" ><h3>Add Your Request!</h3>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav">
+					<a class="nav-link" href="index.html"><mark>Show List</mark></a>
+				  </div>
+				</div>
+			   </div>	
+			  </div>
+			</nav>
+		</header>
+		<hr>
+		<form onsubmit="return false;">
+		  <div class="mb-3">
+			<input type="text" class="form-control" placeholder="Name" id="name" autofocus>
+		  </div>
+
+		  <div class="mb-3">
+			<input type="text" class="form-control" placeholder="Age" id="age">
+		  </div>
+
+		  <div class="mb-3">
+			<input type="text" class="form-control" placeholder="Email" id="email">
+		  </div>
+			
+		  <div class="mb-3">
+			 <label>Request Domain : </label> 
+			     <select name="reqdomain" id="reqdomain">
+					<option value="Cars" >Cars</option>
+					<option value="Phones" >Phones</option>
+					<option value="Appliances" >Appliances</option>
+					<option value="Electronic Devices">Electronic Devices</option>
+				</select>
+		  </div>
+
+		  <div class="mb-3">
+			<input type="text" class="form-control" placeholder="Your Request/Issue" id="req">
+		  </div>
+
+		  <button class="btn btn-primary" onclick="return postData()">Add</button>
+		  <a href="index.html" class="btn btn-primary">Cancel</a>
+		</form>
+		
+		<footer class="footer mt-auto py-3 bg-light">
+		  <div class="container text-center">
+			<span class="text-muted">Copyright &copy; ESD-2021</span>
+		  </div>
+		</footer>
+	</body>
+	<script src="script.js"></script>
+	<script>
+	</script>
+</html>
